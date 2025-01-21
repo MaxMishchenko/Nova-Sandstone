@@ -1,0 +1,103 @@
+.section {
+    &__feedback {
+        padding: 80px 0 80px 80px;
+
+        @media only screen and (max-width: 1280px) {
+            padding: 40px 0 40px 40px;
+        }
+
+        @media only screen and (max-width: 1024px) {
+            padding: 40px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            padding: 20px;
+        }
+
+        &-wrapper {
+            width: 60%;
+
+            @media only screen and (max-width: 1024px) {
+                width: 100%;
+            }
+        }
+
+        &-img {
+            background-image: url(../img/section-feedback/feedback.webp);
+            width: 40%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+            @media only screen and (max-width: 1024px) {
+                display: none;
+            }
+        }
+
+        &-block {
+            margin-bottom: 40px;
+
+            &-title {
+                font-size: 1.175rem;
+                margin-bottom: 15px;
+            }
+        }
+
+        &-title {
+            margin-bottom: 60px;
+            font-size: 1.75rem;
+
+            @media only screen and (max-width: 768px) {
+                margin-bottom: 40px;
+            }
+        }
+
+        &-heading {
+            font-size: 1rem;
+            margin-right: 10px;
+        }
+
+        &-location {
+            font-size: 1rem;
+            color: var(--color--gray);
+        }
+
+        &-text {
+            font-size: 1rem;
+            padding: 5px 80px 0 0;
+            line-height: 1.5;
+            margin-bottom: 10px;
+
+            @media only screen and (max-width: 1024px) {
+                padding-right: 0;
+            }
+        }
+
+        &-field {
+            height: 95px;
+            padding: 20px;
+            font-size: 1.3125rem;
+            color: var(--color--olive);
+            border: 2px solid var(--color--dark-gray);
+            width: calc(100% - 80px);
+            margin-top: 40px;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            @media only screen and (max-width: 1024px) {
+                margin: 40px 0 0 0;
+                width: 100%;
+            }
+
+            @media only screen and (max-width: 425px) {
+                font-size: 1rem;
+                padding: 10px;
+                height: 60px;
+                line-height: 60px;
+                margin-top: 0;
+            }
+        }
+    }
+}

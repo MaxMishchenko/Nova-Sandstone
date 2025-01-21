@@ -1,0 +1,186 @@
+.section {
+    &__best {
+        padding: 80px 80px 180px 80px;
+
+        @media only screen and (max-width: 1280px) {
+            padding: 40px 40px 120px;
+        }
+
+        @media only screen and (max-width: 1024px) {
+            flex-direction: column-reverse;
+            padding: 0;
+        }
+
+        &-container {
+            width: 60%;
+            position: relative;
+
+            @media only screen and (max-width: 1024px) {
+                width: 100%;
+                padding: 40px;
+            }
+
+            @media only screen and (max-width: 768px) {
+                padding: 20px;
+            }
+
+            &-img {
+                width: 40%;
+                height: 90dvh;
+                background-image: url(../img/section-best/best_quality.webp);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+
+                @media only screen and (max-width: 1024px) {
+                    width: 100%;
+                }
+            }
+        }
+
+        &-wrapper {
+            padding-top: 60px;
+            margin-bottom: 20px;
+
+            @media only screen and (max-width: 768px) {
+                padding-top: 20px;
+                justify-content: center;
+                flex-direction: column-reverse;
+                align-items: center;
+            }
+        }
+
+        &-title {
+            margin-bottom: 20px;
+            font-size: 1.75rem;
+        }
+
+        &-text {
+            font-size: 1rem;
+            margin-bottom: 15px;
+            max-width: 390px;
+            line-height: 22px;
+
+            @media only screen and (max-width: 1024px) {
+                max-width: 100%;
+            }
+        }
+
+        &-cost {
+            position: relative;
+            padding-left: 45px;
+
+            @media only screen and (max-width: 425px) {
+                margin: 0 auto;
+            }
+
+            &:first-child {
+                margin-right: 75px;
+
+                @media only screen and (max-width: 1280px) {
+                    margin-right: 40px;
+                }
+
+                @media only screen and (max-width: 768px) {
+                    margin-right: 25px;
+                }
+
+                @media only screen and (max-width: 425px) {
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        &-currency {
+            font-size: 2.5rem;
+            font-weight: 700;
+            position: absolute;
+            left: 10px;
+            top: 10px;
+        }
+
+        &-save {
+            font-size: 1.75rem;
+            max-width: 320px;
+
+            @media only screen and (max-width: 768px) {
+                max-width: 100%;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        }
+
+        &-price {
+            font-weight: 700;
+            font-size: 4.375rem;
+
+            &-old {
+                font-weight: 700;
+                font-size: 2.625rem;
+                position: relative;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    height: 4px;
+                    background-color: var(--color--beige);
+                    left: -4px;
+                    right: 0;
+                    top: 55%;
+                    transform: translateY(-50%);
+                    width: 0;
+                    transition: width 1s ease;
+                }
+
+                &.visible {
+                    &:after {
+                        width: calc(100% + 10px);
+                    }
+                }
+            }
+
+            &-text {
+                font-size: 1.75rem;
+                position: absolute;
+                left: -15px;
+                top: 0;
+            }
+
+            &-info {
+                font-size: 1.375rem;
+            }
+
+            &-foreign {
+                font-size: 2.5rem;
+            }
+        }
+
+        &-btn {
+            position: absolute;
+            bottom: -100px;
+            right: -65px;
+            transform: translateX(-50%);
+            background-color: transparent;
+            width: 225px;
+            height: 225px;
+            border-radius: 50%;
+            padding: 5px;
+            transition: .4s;
+
+            @media only screen and (max-width: 1024px) {
+                position: relative;
+                bottom: 0;
+                left: 50%;
+            }
+
+            &:hover {
+                background-color: var(--color--beige);
+            }
+
+            &-img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}

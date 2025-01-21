@@ -1,0 +1,89 @@
+.section {
+    &__reasons {
+        padding: 80px 80px 80px 0;
+
+        @media only screen and (max-width: 1280px) {
+            padding: 40px 40px 40px 0;
+        }
+
+        @media only screen and (max-width: 1024px) {
+            padding: 40px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            padding: 20px;
+        }
+
+        &-img {
+            background-image: url(../img/section-reasons/why_us.webp);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 40%;
+            height: 90dvh;
+
+            @media only screen and (max-width: 1280px) {
+                height: auto;
+            }
+
+            @media only screen and (max-width: 1024px) {
+                display: none;
+            }
+        }
+
+        &-title {
+            font-size: 1.75rem;
+            margin-bottom: 20px;
+        }
+
+        &-subtitle {
+            font-size: 1rem;
+            margin-bottom: 40px;
+        }
+
+        &-container {
+            width: 60%;
+            padding: 0 80px;
+
+            @media only screen and (max-width: 1024px) {
+                padding: 0;
+                width: 100%;
+            }
+        }
+
+        &-list {
+            padding-left: 60px;
+
+            @media only screen and (max-width: 1024px) {
+                padding-left: 50px;
+            }
+        }
+
+        &-icon {
+            position: absolute;
+            top: 4px;
+            left: -45px;
+            opacity: 0;
+            transition: opacity .4s;
+
+            &.visible {
+                opacity: 1;
+            }
+        }
+
+        &-item {
+            margin-bottom: 20px;
+            position: relative;
+
+            &-title {
+                font-size: 1.375rem;
+                margin-bottom: 10px;
+            }
+
+            &-text {
+                font-size: 1rem;
+                line-height: 1.6;
+            }
+        }
+    }
+}

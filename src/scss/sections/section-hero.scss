@@ -1,0 +1,82 @@
+.section {
+    &__hero {
+        background-image: url(../img/section-hero/section_hero_bg.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: calc(100dvh - 93px);
+        position: relative;
+
+        &-bg {
+            position: absolute;
+            right: 80px;
+            bottom: 80px;
+            filter: brightness(0.4);
+            width: calc(100vw / 9);
+            min-height: 125px;
+            min-width: 125px;
+            max-width: 195px;
+            max-height: 195px;
+            height: auto;
+
+            @media only screen and (max-width: 1280px) {
+                right: 40px;
+                bottom: 40px;
+            }
+
+            @media only screen and (max-width: 768px) {
+                right: 20px;
+                bottom: 20px;
+            }
+        }
+
+        &-info {
+            border-bottom: 3px solid var(--color--beige);
+            padding: 20px 80px;
+
+            @media only screen and (max-width: 1280px) {
+                padding: 20px 40px;
+            }
+
+            @media only screen and (max-width: 768px) {
+                padding: 20px;
+            }
+        }
+
+        &-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-right: 5px;
+
+            @media only screen and (max-width: 768px) {
+                margin-right: 0;
+            }
+
+            @media only screen and (max-width: 375px) {
+                font-size: 1.375rem;
+            }
+        }
+
+        &-heading {
+            @media only screen and (max-width: 768px) {
+                flex-direction: column;
+                align-items: baseline;
+            }
+        }
+
+        &-subtitle {
+            font-size: 1.75rem;
+            font-weight: 700;
+
+            @media only screen and (max-width: 768px) {
+                font-size: 1rem;
+                font-weight: 400;
+            }
+        }
+
+        &-img {
+            margin-right: 15px;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    font-family: $font_primary;
+    color: var(--color--olive);
+    font-weight: normal;
+}
+
+body {
+    &.lock {
+        overflow: hidden;
+        pointer-events: none;
+    }
+}
